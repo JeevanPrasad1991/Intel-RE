@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:elevation="2dp"
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/txt_qtrs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.2"
+                android:background="@color/grey_background"
+                android:gravity="center"
+                android:padding="@dimen/appbar_padding_top"
+                android:text="semi q"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xsmall" />
+
+            <TextView
+                android:id="@+id/txt_shopermkt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1.8"
+                android:background="@color/grey_background"
+                android:gravity="center"
+                android:padding="@dimen/appbar_padding_top"
+                android:text="2r"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xsmall" />
+
+
+            <TextView
+                android:id="@+id/txt_training"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="2.5"
+                android:background="@color/grey_background"
+                android:gravity="center"
+                android:padding="@dimen/appbar_padding_top"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xsmall" />
+
+            <TextView
+                android:id="@+id/txt_visual_merchanding"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="2.6"
+                android:background="@color/grey_background"
+                android:gravity="center"
+                android:padding="@dimen/appbar_padding_top"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xsmall" />
+
+            <TextView
+                android:id="@+id/txt_brave_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1.9"
+                android:background="@color/grey_background"
+                android:gravity="center"
+                android:padding="@dimen/appbar_padding_top"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_xsmall" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

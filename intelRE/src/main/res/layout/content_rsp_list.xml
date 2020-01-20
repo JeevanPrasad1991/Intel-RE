@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".dailyentry.RspListActivity"
+    tools:showIn="@layout/activity_rsp_list">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:padding="@dimen/custom_margin"
+            android:text="Store Name :"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:padding="@dimen/custom_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize14sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_standard"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.6"
+                    android:background="@color/blue"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/custom_margin"
+                    android:text="RSP"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight=".4"
+                    android:background="@color/blue"
+                    android:gravity="center"
+                    android:padding="@dimen/custom_margin"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_rsp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

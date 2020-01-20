@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:background="@drawable/rouded_corner"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txt_comp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_marginLeft="2dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/custom_margin"
+            android:text="txttxttxttxttxttxt"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textsize14sp" />
+
+        <TextView
+            android:id="@+id/txt_cate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3sp"
+            android:layout_weight="3"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/custom_margin"
+            android:text="jeevan Rana"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textsize14sp" />
+
+        <ImageView
+            android:id="@+id/txt_rsplist"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="3sp"
+            android:layout_weight="1.5"
+            android:background="@color/grey_background"
+            android:gravity="center"
+            android:src="@drawable/ic_view"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/txt_pro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3sp"
+            android:layout_weight="2.5"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Cpm india"
+            android:padding="@dimen/custom_margin"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textsize14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imgDelRow"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5sp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:src="@mipmap/ic_delete_forever_black_48dp" />
+    </LinearLayout>
+
+</LinearLayout>

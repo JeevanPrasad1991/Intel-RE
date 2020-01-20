@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        card_view:cardBackgroundColor="@color/colorOrange"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/storenamelistview_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:padding="08sp">
+
+            <ImageView
+                android:id="@+id/storelistviewxml_storeico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="06sp"
+                android:paddingTop="20dp" />
+
+            <TextView
+                android:id="@+id/storelistviewxml_store_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/storelistviewxml_storeico"
+                android:layout_toRightOf="@+id/storelistviewxml_storeico"
+                android:text="fdfdfdff"
+                android:textColor="#1F3A6C"
+                android:textSize="@dimen/textsize_15sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/storelist_storename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storelistviewxml_store_id"
+                android:layout_alignLeft="@+id/storelistviewxml_store_id"
+                android:layout_marginTop="5dp"
+                android:text="addd"
+                android:textColor="#1F3A6C"
+                android:textSize="@dimen/textsize14sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/storelistviewxml_storeaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/storelist_storename"
+                android:layout_alignLeft="@+id/storelist_storename"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:text="addd"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+
+            <Button
+                android:id="@+id/chkout"
+                android:layout_width="100dip"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/roundedbutton"
+                android:focusable="false"
+                android:text="Checkout"
+                android:textColor="@color/black"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/storelistviewxml_storeico"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

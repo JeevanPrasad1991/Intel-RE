@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/store_p_activity_vertical_margin"
+    android:paddingLeft="@dimen/store_p_activity_vertical_margin"
+    android:paddingRight="@dimen/store_p_activity_vertical_margin"
+    android:paddingTop="@dimen/store_p_activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".dailyentry.MarketInfoActivity"
+    tools:showIn="@layout/activity_market_info">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="8"
+                        android:gravity="left"
+                        android:padding="@dimen/custom_margin"
+                        android:text="Market Info Exists"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+
+                    <CheckBox
+                        android:id="@+id/market_info_checkE"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="2"
+                        android:inputType="text"
+                        android:checked="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/mki_brandRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:padding="@dimen/custom_margin"
+                        android:text="Brand"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+
+                    <Spinner
+                        android:id="@+id/spinM_brand"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="6"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mki_typeRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:padding="8dp"
+                        android:text="Type"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+
+                    <TextView
+                        android:id="@+id/market_typeTXT"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="4"
+                        android:background="@drawable/rouded_corner"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:padding="@dimen/custom_margin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/rouded_corner"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mki_infotypeRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:padding="@dimen/custom_margin"
+                        android:text="Info Type"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+
+                    <Spinner
+                        android:id="@+id/market_spin_infotype"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="6"
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mki_remarkRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="4"
+                        android:gravity="left"
+                        android:padding="@dimen/custom_margin"
+                        android:text="Remark"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+
+                    <EditText
+                        android:id="@+id/remark_edtM"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="6"
+                        android:background="@drawable/rouded_corner"
+                        android:inputType="text"
+                        android:hint="(Optional)"
+                        android:padding="@dimen/custom_margin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mki_imagRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/marketi_img"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/custom_margin"
+                        android:src="@mipmap/camera_orange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mki_addRL"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/btn_add_marketi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginRight="16dp"
+                        android:src="@drawable/add" />
+                    />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/mki_compRL"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3sp"
+                android:layout_weight="3"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="BRAND"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="3sp"
+                android:layout_weight="2.2"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="TYPE"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3sp"
+                android:layout_weight="2.8"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="Info Type"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize14sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="3sp"
+                android:layout_weight="2"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:text="DELETE"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/textsize14sp"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycl_marketinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
